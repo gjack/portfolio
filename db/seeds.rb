@@ -5,3 +5,32 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+10.times do |blog|
+  Blog.create!(
+    title: "My Blog Post #{blog}",
+    body: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+  )
+end
+
+puts "10 blog posts created"
+
+5.times do |skill|
+  Skill.create!(
+    title: "Rails #{skill}",
+    percent_utilized: 15
+  )
+end
+
+puts "5 skills posts created"
+
+9.times do |portfolio_item|
+  Portfolio.create!(
+    title: "Portfolio titltle: #{portfolio_item}",
+    subtitle: "My great service",
+    body: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    main_image: "http://placehold.it/600x400",
+    thumb_image: "http://placehold.it/350X200"
+  )
+end
+
+puts "9 portfolio_items created"
